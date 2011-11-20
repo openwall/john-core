@@ -18,7 +18,8 @@ machine implementation.
 such as for different machines, "make" targets, C compilers, optimization
 options, or/and versions of John the Ripper.
 * Additional public lists of "top N passwords" have been merged into the
-bundled common passwords list.
+bundled common passwords list, and some insufficiently common passwords were
+removed from the list.
 
 The following changes have been made between John 1.7.7 and 1.7.8:
 
@@ -267,4 +268,4 @@ Mac OS X (PowerPC and x86), SCO, BeOS.
 * Bug and portability fixes, and new bugs.
 * Bonus: "Strip" cracker included in the default john.conf (john.ini).
 
-$Owl: Owl/packages/john/john/doc/CHANGES,v 1.68 2011/11/20 03:26:28 solar Exp $
+$Owl: Owl/packages/john/john/doc/CHANGES,v 1.69 2011/11/20 05:20:33 solar Exp $
