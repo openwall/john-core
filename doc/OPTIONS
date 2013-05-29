@@ -317,4 +317,12 @@ with passwdqc, before you ask users to change their passwords - whether
 using this script or otherwise.  And you should edit the message inside
 the script before possibly using it.
 
-$Owl: Owl/packages/john/john/doc/OPTIONS,v 1.17 2013/05/29 17:57:56 solar Exp $
+	makechr
+
+This is a script to (re-)generate the .chr files using passwords in
+john.pot and applying all of the defined external mode filters.  To
+speed it up on a sufficiently large computer (RAM and CPUs), "&" may be
+added after the John invocation inside the script (to run all of them in
+parallel).
+
+$Owl: Owl/packages/john/john/doc/OPTIONS,v 1.18 2013/05/29 19:27:40 solar Exp $
