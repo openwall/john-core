@@ -1,8 +1,7 @@
 	John the Ripper password cracker.
 
 John the Ripper is a fast password cracker, currently available for
-many flavors of Unix (11 are officially supported, not counting
-different architectures), Windows, DOS, BeOS, and OpenVMS (the latter
+many flavors of Unix, Windows, DOS, BeOS, and OpenVMS (the latter
 requires a contributed patch).  Its primary purpose is to detect weak
 Unix passwords.  Besides several crypt(3) password hash types most
 commonly found on various Unix flavors, supported out of the box are
@@ -139,4 +138,4 @@ the recommended order of reading:
 
 Happy reading!
 
-$Owl: Owl/packages/john/john/doc/README,v 1.25 2013/05/30 00:22:14 solar Exp $
+$Owl: Owl/packages/john/john/doc/README,v 1.26 2015/06/04 06:01:38 solar Exp $
