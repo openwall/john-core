@@ -25,6 +25,7 @@ of NEON for bitslice DES).
 * Made a minor optimization to MMX and SSE2 assembly code for LM hash.
 * Dropped Ultrix and SCO support.
 * Don't probe for alternate config file names (like john.ini when on Unix).
+* "DokuWiki" external mode sample has been added to the default john.conf.
 * Fixed a bug introduced in version 1.7.4 in the wordlist rules engine, where
 some sequences of rule commands could overflow a word buffer.
 * Fixed an out of bounds write bug in the external mode virtual machine.
@@ -364,4 +365,4 @@ Mac OS X (PowerPC and x86), SCO, BeOS.
 * Bug and portability fixes, and new bugs.
 * Bonus: "Strip" cracker included in the default john.conf (john.ini).
 
-$Owl: Owl/packages/john/john/doc/CHANGES,v 1.104 2017/10/25 18:51:46 solar Exp $
+$Owl: Owl/packages/john/john/doc/CHANGES,v 1.105 2017/11/08 20:08:36 solar Exp $
