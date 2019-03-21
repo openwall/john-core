@@ -496,6 +496,7 @@ static void single_done(void)
 		progress = 100;
 	}
 
+	crk_done();
 	rec_done(event_abort || (status.pass && single_db->salts));
 }
 
