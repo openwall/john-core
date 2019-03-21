@@ -134,7 +134,7 @@ static void print_usage(char *name)
 	column = strrchr(JOHN_USAGE, '\0') - strrchr(JOHN_USAGE, '\n') - 1;
 	format = fmt_list;
 	do {
-		char *label = format->params.label;
+		const char *label = format->params.label;
 		int length = strlen(label) + (format->next != NULL);
 		column += length;
 		if (column > 80) {
