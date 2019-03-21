@@ -867,7 +867,10 @@ char *rules_apply(char *word, char *rule, int split, char *last)
 			break;
 
 		case 'Q':
-			if (!strncmp(memory, in, rules_max_length))
+			if (NEXT) {
+				if (!strcmp(memory, in))
+					REJECT
+			} else if (!strncmp(memory, in, rules_max_length))
 				REJECT
 			break;
 
