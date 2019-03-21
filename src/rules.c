@@ -862,7 +862,7 @@ char *rules_apply(char *word, char *rule, int split, char *last)
 			break;
 
 		case 'M':
-			strnfcpy(memory = memory_buffer, in, rules_max_length);
+			memcpy(memory = memory_buffer, in, length + 1);
 			rules_vars['m'] = (unsigned char)length - 1;
 			break;
 
