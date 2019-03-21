@@ -1002,10 +1002,12 @@ out_OK:
 out_which:
 	if (which == 1) {
 		strcat(in, buffer[2]);
+		length = strlen(in);
 		goto out_OK;
 	}
 	strcat(buffer[2], in);
 	in = buffer[2];
+	length = strlen(in);
 	goto out_OK;
 
 out_ERROR_POSITION:
