@@ -31,6 +31,7 @@ Knights Corner), which uses its 512-bit SIMD intrinsics for bitslice DES.
 (For second generation Xeon Phi, aka Knights Landing, use linux-x86-64-avx512.)
 * Added linux-arm32le and linux-arm32le-neon make targets (the latter makes use
 of NEON for bitslice DES).
+* Added linux-sparc64 make target.
 * Made a minor optimization to MMX and SSE2 assembly code for LM hash.
 * Dropped Ultrix and SCO support.
 * Don't probe for alternate config file names (like john.ini when on Unix).
@@ -375,4 +376,4 @@ Mac OS X (PowerPC and x86), SCO, BeOS.
 * Bug and portability fixes, and new bugs.
 * Bonus: "Strip" cracker included in the default john.conf (john.ini).
 
-$Owl: Owl/packages/john/john/doc/CHANGES,v 1.113 2019/04/07 17:19:21 solar Exp $
+$Owl: Owl/packages/john/john/doc/CHANGES,v 1.114 2019/04/07 18:39:45 solar Exp $
