@@ -28,6 +28,7 @@ Johnny the GUI) had disabled it.
 respectively AVX-512 and AVX2 for bitslice DES.
 * Added linux-mic make target for Intel MIC (first generation Xeon Phi, aka
 Knights Corner), which uses its 512-bit SIMD intrinsics for bitslice DES.
+(For second generation Xeon Phi, aka Knights Landing, use linux-x86-64-avx512.)
 * Added linux-arm32le and linux-arm32le-neon make targets (the latter makes use
 of NEON for bitslice DES).
 * Made a minor optimization to MMX and SSE2 assembly code for LM hash.
@@ -374,4 +375,4 @@ Mac OS X (PowerPC and x86), SCO, BeOS.
 * Bug and portability fixes, and new bugs.
 * Bonus: "Strip" cracker included in the default john.conf (john.ini).
 
-$Owl: Owl/packages/john/john/doc/CHANGES,v 1.112 2019/04/07 17:05:00 solar Exp $
+$Owl: Owl/packages/john/john/doc/CHANGES,v 1.113 2019/04/07 17:19:21 solar Exp $
