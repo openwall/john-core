@@ -35,16 +35,15 @@
 #define DES_EXTB			0
 #define DES_COPY			0
 #define DES_BS_ASM			0
-#if 1
 /*
- * Here we assume that we're on AArch64, which implies we have Advanced SIMD.
- * Tell our originally 32-bit ARM code that we sort of have NEON.
- * Newer gcc does the same for us on its own, but older gcc needs help here.
+ * This file is only for AArch64, but we check for __aarch64__ explicitly to
+ * ensure we avoid any potential discrepancies between the settings here and
+ * the checks for __aarch64__ in our other source files.
  */
-#ifndef __ARM_NEON
-#define __ARM_NEON 1
-#endif
+#ifdef __aarch64__
 /*
+ * AArch64 implies we have Advanced SIMD.
+ *
  * Give native vsel() a try with DES_BS=3, even though the timings are often
  * such that it might be better to avoid its use, and DES_BS=1 might be better.
  * This varies between systems, and we can't detect what's optimal from here.
