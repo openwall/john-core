@@ -1,6 +1,6 @@
 /*
  * This file is part of John the Ripper password cracker,
- * Copyright (c) 1996-2019 by Solar Designer
+ * Copyright (c) 1996-2021 by Solar Designer
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted.
@@ -96,7 +96,7 @@ static struct opt_entry opt_list[] = {
 
 #define JOHN_USAGE \
 "John the Ripper password cracker, version " JOHN_VERSION "\n" \
-"Copyright (c) 1996-2019 by " JOHN_COPYRIGHT "\n" \
+"Copyright (c) 1996-2021 by " JOHN_COPYRIGHT "\n" \
 "Homepage: https://www.openwall.com/john/\n" \
 "\n" \
 "Usage: %s [OPTIONS] [PASSWORD-FILES]\n" \
@@ -228,8 +228,8 @@ void opt_init(char *name, int argc, char **argv)
 		status_print();
 #if OS_FORK
 		if (options.fork) {
-			unsigned int i;
-			for (i = 2; i <= options.fork; i++) {
+			unsigned int i, node_max = options.node_max;
+			for (i = options.node_min + 1; i <= node_max; i++) {
 				rec_name = rec_name_orig;
 				rec_name_completed = 0;
 				rec_restoring_now = 0;
