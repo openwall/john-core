@@ -130,5 +130,3 @@ In general, external mode programs (and John configuration files in
 general) are treated as trusted input, much like you would treat a C
 file in John source tree.  A malicious external mode can use out of
 bounds array accesses to trigger arbitrary machine code execution.
-
-$Owl: Owl/packages/john/john/doc/EXTERNAL,v 1.5 2016/05/31 09:12:22 solar Exp $

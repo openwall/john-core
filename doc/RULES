@@ -291,5 +291,3 @@ should not want to actually produce duplicate rules.
 
 Please refer to the default configuration file for John the Ripper for
 many example uses of the features described in here.
-
-$Owl: Owl/packages/john/john/doc/RULES,v 1.14 2017/05/14 12:16:07 solar Exp $

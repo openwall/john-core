@@ -349,5 +349,3 @@ john.pot and applying all of the defined external mode filters.  To
 speed it up on a sufficiently large computer (RAM and CPUs), "&" may be
 added after the John invocation inside the script (to run all of them in
 parallel).
-
-$Owl: Owl/packages/john/john/doc/OPTIONS,v 1.20 2016/01/21 05:10:00 solar Exp $
